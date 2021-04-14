@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name" translatable="false">Raf Wallet</string>
+
+    <string name="spinner_title">
+        <item>Prihod</item>
+        <item>Rashod</item>
+    </string>
+    <string name="loginNaslov">Wallet system for students of RAF</string>
+    <string name="naslovStanja">Overview of the total account balance</string>
+    <string name="rashod">Difference:</string>
+    <string name="razlika">Expense:</string>
+    <string name="unosNaslov">Enter new income/expenditure</string>
+    <string name="btnDodajUListu">Add to list</string>
+    <string name="podaci_o_prihodu_rashodu">Income/expenditure data</string>
+    <string name="podaciNaslov">Title:</string>
+    <string name="podaciKolicina">Amount:</string>
+    <string name="opis">Description:</string>
+    <string name="btnOdustani">Cancel</string>
+    <string name="btnIzmeni">Edit</string>
+    <string name="podaci_o_korisniku">User info</string>
+    <string name="ime">Name:</string>
+    <string name="prezime">Surname:</string>
+    <string name="banka">Bank:</string>
+    <string name="btnOdjava">Logout</string>
+    <string name="izmeni_podatke">CHANGE DATA</string>
+    <string name="prihod">Income:</string>
+    <string name="stanje">Balance</string>
+    <string name="unos">Input</string>
+    <string name="liste">Lists</string>
+    <string name="profil">Profile</string>
+</resources>

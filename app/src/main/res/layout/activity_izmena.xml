@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IzmenaActivity">
+
+    <TextView
+        android:id="@+id/izmenaNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/podaci_o_prihodu_rashodu"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textViewStyle"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/izmenaDolar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/izmenaNaslov"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_attach_money_24black"/>
+
+    <TextView
+        android:id="@+id/izmenaNaslovUnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/podaciNaslov"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@id/izmenaDolar"
+        style="@style/textViewStyle"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/izmeniNaslovEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Naslov"
+        app:layout_constraintStart_toEndOf="@id/izmenaNaslovUnos"
+        app:layout_constraintTop_toBottomOf="@id/izmenaDolar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/izmeniKolicinaEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="1000"
+        app:layout_constraintStart_toEndOf="@id/izmenaKolicina"
+        app:layout_constraintTop_toBottomOf="@id/izmeniNaslovEditText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"/>
+
+    <TextView
+        android:id="@+id/izmenaKolicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/podaciKolicina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/izmenaNaslovUnos"
+        android:layout_marginLeft="25dp"
+        style="@style/textViewStyle"
+
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/unosOpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/opis"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/izmenaKolicina"
+        style="@style/textViewStyle"
+
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/izmeniBtnMic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unosOpis"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/izmeniBtnRecording"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unosOpis"
+        android:layout_marginTop="60dp"
+        app:tint="@android:color/holo_red_light"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/izmeniOpisTextView"
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unosOpis"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Button
+        android:id="@+id/btnOdustani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOdustani"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmeniOpisTextView"
+        android:layout_marginTop="40dp"
+        style="@style/buttonViewStyle"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/btnIzmeni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnIzmeni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmeniOpisTextView"
+        android:layout_marginTop="40dp"
+        style="@style/buttonViewStyle"
+        android:layout_marginRight="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

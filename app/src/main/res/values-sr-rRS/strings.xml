@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Raf Wallet</string>
+    <string name="loginNaslov">Novcanik sistem za studente RAF-a</string>
+    <string name="naslovStanja">Pregled ukupnog stanja racuna</string>
+    <string name="rashod">Rashod:</string>
+    <string name="razlika">Razlika:</string>
+    <string name="unosNaslov">Unos novog prihoda/rashoda</string>
+    <string name="btnDodajUListu">Dodaj u listu</string>
+    <string name="podaci_o_prihodu_rashodu">Podaci o prihodu/rashodu</string>
+    <string name="podaciNaslov">Naslov:</string>
+    <string name="podaciKolicina">Kolicina:</string>
+    <string name="opis">Opis:</string>
+    <string name="btnOdustani">Odustani</string>
+    <string name="btnIzmeni">Izmeni</string>
+    <string name="podaci_o_korisniku">Podaci o korisniku</string>
+    <string name="ime">Ime:</string>
+    <string name="prezime">Prezime:</string>
+    <string name="banka">Banka:</string>
+    <string name="btnOdjava">Odjava</string>
+    <string name="izmeni_podatke">IZMENI PODATKE</string>
+    <string name="prihod">Prihod:</string>
+    <string name="stanje">Stanje</string>
+    <string name="unos">Unos</string>
+    <string name="liste">Liste</string>
+    <string name="profil">Profil</string>
+</resources>

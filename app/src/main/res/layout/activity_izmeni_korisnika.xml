@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.IzmeniKorisnikaActivity">
+
+    <TextView
+        android:id="@+id/izmenaKorisnikaNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/izmeni_podatke"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/izmenaKorisnikaDolar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmenaKorisnikaNaslov"
+        android:src="@drawable/ic_baseline_attach_money_24black"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/profilTextViewIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmenaKorisnikaDolar"
+        android:layout_marginLeft="80dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/izmeniKorisnikaIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewIme"
+        app:layout_constraintTop_toBottomOf="@id/izmenaKorisnikaDolar"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewPrezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/izmeniKorisnikaIme"
+        android:layout_marginLeft="80dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/izmeniKorisnikaPrezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewPrezime"
+        app:layout_constraintTop_toBottomOf="@id/izmeniKorisnikaIme"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewBanka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/banka"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilTextViewPrezime"
+        android:layout_marginLeft="80dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/izmeniKorisnikaBanka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewBanka"
+        app:layout_constraintTop_toBottomOf="@id/izmeniKorisnikaPrezime"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/izmeniKorisnikaBtnIzmeni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnIzmeni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/buttonViewStyle"
+        android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/profilNaslov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/podaci_o_korisniku"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/profilDolar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilNaslov"
+        android:src="@drawable/ic_baseline_attach_money_24black"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/ime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilDolar"
+        android:layout_marginLeft="40dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewImeKorisnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Milan"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewIme"
+        app:layout_constraintTop_toBottomOf="@id/profilDolar"
+        android:layout_marginLeft="70dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewPrezime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/prezime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilTextViewIme"
+        android:layout_marginLeft="40dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewPrezimeKorisnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Milanovic"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewPrezime"
+        app:layout_constraintTop_toBottomOf="@id/profilTextViewImeKorisnika"
+        android:layout_marginLeft="20dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/profilTextViewBanka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/banka"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilTextViewPrezime"
+        android:layout_marginLeft="40dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/profilTextViewBankaKorisnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="OTP"
+        app:layout_constraintStart_toEndOf="@id/profilTextViewBanka"
+        app:layout_constraintTop_toBottomOf="@id/profilTextViewPrezimeKorisnika"
+        android:layout_marginLeft="43dp"
+        style="@style/textViewStyle"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/profilBtnIzmeni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnIzmeni"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@style/buttonViewStyle"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/profilBtnOdjava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOdjava"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/buttonViewStyle"
+        android:layout_marginEnd="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
